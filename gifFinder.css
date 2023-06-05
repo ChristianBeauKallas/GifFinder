@@ -1,21 +1,62 @@
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+
 .hidden{
     display: none;
 }
 
-body{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
     background-color: black;
 }
 
+#typingHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: .15em solid purple;
+    border-left: .15em solid purple;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 22px;
+    animation: typing 4s steps(40, end), fadeOut 1s 4s;
+}
+
+.header {
+    color: white;
+    text-align: center;
+}
+
 .container {
+    opacity: 0;
+    animation: fadeIn 1s 4s forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.center {
-    color: white;
-    text-decoration: underline;
 }
 
 .labelTitle{
@@ -23,8 +64,7 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 18px;
     padding: 10px;
 }
 

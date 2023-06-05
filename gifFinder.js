@@ -2,6 +2,12 @@ console.log("Hello Mars we are linked");
 
 const apiKey= "EioowPzkpK23NP4jNbLR8442NoZxMpqL"
 
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('typingHeader').style.display = 'none';
+    }, 3000);
+}
+
 function catFetch(){
     event.preventDefault();
     let searchInput = document.querySelector("#searchGif").value;
@@ -19,6 +25,7 @@ function catFetch(){
 
         img.classList.remove("hidden")
         img.src = objectReturned.data.images.original.url;
+        searchInput.value = "";
     })
     .catch((err)=> {
         console.log(err.message)
