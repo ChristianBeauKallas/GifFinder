@@ -25,12 +25,9 @@ function catFetch(){
 
         img.classList.remove("hidden")
         img.src = objectReturned.data.images.original.url;
-        searchInput.value = "";
+        searchGif.value = "";
     })
     .catch((err)=> {
         console.log(err.message)
     })
 }
-
-const form = document.querySelector("#gifSearchForm");
-form.addEventListener("submit", catFetch);
