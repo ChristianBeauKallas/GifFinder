@@ -1,0 +1,45 @@
+.hidden{
+    display: none;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    color: white;
+    text-decoration: underline;
+}
+
+.labelTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#searchGif {
+    text-align: center;
+    background-color: white;
+}
+
+#searchButton {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gif1{
+    padding-top: 20px;
+}
