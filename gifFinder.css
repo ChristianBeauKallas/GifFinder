@@ -58,9 +58,9 @@ body {
 #searchGif {
     text-align: center;
     background-color: white;
-    padding: 30px 70px;
+    padding: 30px 80px;
     font-size: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
     box-sizing: border-box;
 }
