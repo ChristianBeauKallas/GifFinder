@@ -100,3 +100,12 @@ body {
 #gif1{
     padding-top: 20px;
 }
+@media only screen and (max-width: 600px){
+#searchGif{
+    padding: 20px 40px;
+    font-size: 16px; 
+    }
+}
+.header {
+    font-size: 60px; 
+}
