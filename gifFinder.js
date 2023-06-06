@@ -5,8 +5,9 @@ const apiKey= "EioowPzkpK23NP4jNbLR8442NoZxMpqL"
 window.onload = function() {
     setTimeout(function() {
         document.getElementById('typingHeader').style.display = 'none';
-    }, 3000);
+    }, 4000);
 }
+
 
 function catFetch(){
     event.preventDefault();
@@ -18,7 +19,7 @@ function catFetch(){
         console.log(result)
         return result;
     })
-    //THIS IS WHERE THE PROMISE IS FULFILLED AND DATA IS AVAIlABLE TO CONSUME
+    
     .then((objectReturned)=>{
         console.log(objectReturned.data);
         const img = document.querySelector("#gif1");
@@ -31,3 +32,18 @@ function catFetch(){
         console.log(err.message)
     })
 }
+
+document.getElementById("searchGif").addEventListener("keypress", function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        catFetch(event);
+    }
+});
+
+// document.getElementById("searchButton").addEventListener("click", catFetch);
+
+
+
+
+
+
