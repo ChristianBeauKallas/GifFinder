@@ -27,8 +27,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: .15em solid purple;
-    border-left: .15em solid purple;
+    border-right: .15em solid lightblue;
+    border-left: .15em solid lightblue;
     color: white;
     white-space: nowrap;
     overflow: hidden;
@@ -43,10 +43,6 @@ body {
 }
 
 .container {
-    /* position: absolute;
-    top: 40%; 
-    left: 50%;
-    transform: translate(-50%, -50%); */
     opacity: 0;
     animation: fadeIn 1s 4s forwards;
     display: flex;
@@ -59,15 +55,6 @@ body {
     display: none;
 }
 
-/* .labelTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 45px;
-    padding-bottom: 15px;
-} */
-
 #searchGif {
     text-align: center;
     background-color: white;
@@ -78,9 +65,67 @@ body {
     box-sizing: border-box;
 }
 
-/* #searchButton {
-    display: inline; 
-    margin: 20px auto;
+#gif1{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btnHidden{
+    display: none;
+}
+
+#saveButton {
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#saveButton:hover {
+    background-color: lightblue; 
+    color: black;
+    transform: scale(1.15);
+}
+
+#regenerateButton {
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 50px;
+    margin: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#regenerateButton:hover {
+    background-color: lightblue; 
+    color: black;
+    transform: scale(1.15);
+}
+
+#newSearchButton {
     border-radius: 15px;
     background-color: white;
     color: black;
@@ -90,22 +135,24 @@ body {
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
-} */
-
-/* #searchButton:hover {
-    background-color: grey; 
-    color: white;
-} */
-
-#gif1{
-    padding-top: 20px;
 }
+
+#newSearchButton:hover {
+    background-color: lightblue; 
+    color: black;
+    transform: scale(1.15);
+}
+
+
 @media only screen and (max-width: 600px){
+.header {
+    font-size: 60px; 
+}
 #searchGif{
     padding: 20px 40px;
     font-size: 16px; 
     }
+#gif1 {
+    padding-top: 10px;
 }
-.header {
-    font-size: 60px; 
 }
