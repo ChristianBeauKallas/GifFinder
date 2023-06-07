@@ -1,6 +1,6 @@
 @keyframes typing {
     from { width: 0 }
-    to { width: 65% }
+    to { width: 60% }
 }
 
 @keyframes fadeIn {
@@ -144,6 +144,12 @@ body {
 
 
 @media only screen and (max-width: 600px){
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 65% }
+}
+
 .header {
     font-size: 60px; 
 }
@@ -152,25 +158,35 @@ body {
     animation: typing 1.5s steps(40, end), fadeOut 0.5s 1.5s;
 }
 
+.hidden{
+    display: none;
+}
+
 #searchGif{
-    padding: 20px 40px;
-    font-size: 16px; 
-    }
-    #gif1 {
-        max-width: 75%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    padding: 30px 60px;
+    font-size: 20px; 
+}
 
-    .buttonContainer {
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        margin-bottom: 10px;
-    }
+.container {
+    opacity: 0;
+    animation: fadeIn 0.1s 2.5s forwards;
+}
 
-    #saveButton {
-        margin-top: 15px;
-    }
+/* #gif1 {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.buttonContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#saveButton {
+    margin-top: 15px;
+}
 }
