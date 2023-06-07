@@ -70,12 +70,13 @@ body {
     text-align: center;
 }
 
-/* .buttonContainer {
+.buttonContainer {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 50%;
-    margin-top: 20px;
-} */
+    margin-top: 10px;
+}
 
 .btnHidden{
     display: none;
@@ -155,6 +156,7 @@ body {
 .buttonContainer {
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin-bottom: 10px;
 }
 
