@@ -33,7 +33,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     font-size: 50px;
-    animation: typing 2.5s steps(100, end), fadeOut 1s 2.5s;
+    animation: typing 1.75s steps(100, end), fadeOut 1s 1.75s;
 }
 
 .header {
@@ -44,7 +44,7 @@ body {
 
 .container {
     opacity: 0;
-    animation: fadeIn 1s 2.5s forwards;
+    animation: fadeIn 1s 2.0s forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,7 +155,7 @@ body {
 }
 
 #typingHeader {
-    animation: typing 1.5s steps(100, end), fadeOut 0.5s 1.5s;
+    animation: typing 1.0s steps(100, end), fadeOut 0.5s 1.0s;
 }
 
 .hidden{
@@ -169,7 +169,7 @@ body {
 
 .container {
     opacity: 0;
-    animation: fadeIn 0.5s 2.0s forwards;
+    animation: fadeIn 0.5s 1.5s forwards;
 }
 
 /* #gif1 {

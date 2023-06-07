@@ -4,7 +4,7 @@ let lastSearch = "";  // Save the last search input
 window.onload = function() {
     setTimeout(function() {
         document.getElementById('typingHeader').style.display = 'none';
-    }, 2500);
+    }, 2000);
 }
 
 function catFetch(event){
