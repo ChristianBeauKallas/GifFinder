@@ -33,7 +33,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     font-size: 50px;
-    animation: typing 2.5s steps(40, end), fadeOut 1s 2.5s;
+    animation: typing 2.5s steps(100, end), fadeOut 1s 2.5s;
 }
 
 .header {
