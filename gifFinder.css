@@ -155,7 +155,7 @@ body {
 }
 
 #typingHeader {
-    animation: typing 1.5s steps(40, end), fadeOut 0.5s 1.5s;
+    animation: typing 1.5s steps(100, end), fadeOut 0.5s 1.5s;
 }
 
 .hidden{
