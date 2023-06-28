@@ -1,16 +1,6 @@
-@keyframes typing {
-    from { width: 0 }
-    to { width: 60% }
-}
-
 @keyframes fadeIn {
-    from { opacity: 0 }
-    to { opacity: 1 }
-}
-
-@keyframes fadeOut {
-    from { opacity: 1 }
-    to { opacity: 0 }
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 body {
@@ -27,13 +17,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: .15em solid lightblue;
-    border-left: .15em solid lightblue;
     color: white;
     white-space: nowrap;
     overflow: hidden;
     font-size: 50px;
-    animation: typing 1.75s steps(100, end), fadeOut 1s 2.0s;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .header {
@@ -84,9 +72,9 @@ body {
     display: none;
 }
 
-#saveButton {
+#saveButton, #regenerateButton, #newSearchButton {
     border-radius: 15px;
-    background-color: white;
+    background-color: #A6C1FF;
     color: black;
     border: none;
     padding: 12px 55px;
@@ -97,46 +85,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-#saveButton:hover {
-    background-color: #000952 ; 
-    color: white;
-    transform: scale(1.15);
-}
-
-#regenerateButton {
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 12px 55px;
-    margin: 40px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#regenerateButton:hover {
-    background-color: #000952 ; 
-    color: white;
-    transform: scale(1.15);
-}
-
-#newSearchButton {
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 12px 55px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#newSearchButton:hover {
+#saveButton:hover, #regenerateButton:hover, #newSearchButton:hover {
     background-color: #000952 ; 
     color: white;
     transform: scale(1.15);
